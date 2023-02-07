@@ -1,0 +1,11 @@
+money = int(input("Return on investment:"))
+per_cent = {'าสม': 5.6, 'ัสม': 5.9, 'ยาม': 4.28, 'ัมละ': 4.0}
+procent = list(per_cent.values())
+bankTKB = round(procent[0]/100*money)
+bankCKB = round(procent[1]/100*money)
+bankVTB = round(procent[2]/100*money)
+bankSBER = round(procent[3]/100*money)
+deposit = [bankTKB, bankCKB, bankVTB, bankSBER]
+print("Possible income:", deposit)
+deposit.sort()
+print("The maximum amount you can earn - ", deposit[-1])
